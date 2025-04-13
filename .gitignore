@@ -1,0 +1,25 @@
+# Ignore large files
+large-file.zip
+*.tar.gz
+*.iso
+*.bin
+
+# Ignore Terraform state files and backups
+*.tfstate
+*.tfstate.*
+*.backup
+
+# Ignore Terraform plan files
+*.tfplan
+
+# Ignore crash logs
+crash.log
+
+# Ignore .terraform directory (Terraform plugin and module cache)
+.terraform/
+.terraform.lock.hcl
+
+# Ignore sensitive files (if any)
+secrets.auto.tfvars
+*.pem
+*.key
