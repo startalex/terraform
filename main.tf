@@ -14,7 +14,6 @@ provider "aws" {
 }
 
 resource "aws_instance" "terraform_app_server" {
-=======
   region = "eu-central-1"
 }
 
@@ -27,7 +26,6 @@ resource "aws_instance" "app_server" {
   }
 }
 
-=======
     Name = "terraform-app-server"
   }
 }
