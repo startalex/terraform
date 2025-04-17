@@ -107,3 +107,6 @@ override.tf.json
  
 
 terraform.rc
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
