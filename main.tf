@@ -10,11 +10,17 @@ terraform {
 }
 
 provider "aws" {
-  region  = "eu-central-1"
+  region = "eu-central-1"
 }
 
 resource "aws_instance" "terraform_app_server" {
-  region = "eu-central-1"
+  ami           = "ami-03250b0e01c28d196"
+  instance_type = "t2.micro"
+  region        = "eu-central-1"
+
+  tags = {
+    Name = "terraform-app-server"
+  }
 }
 
 resource "aws_instance" "app_server" {
@@ -26,6 +32,3 @@ resource "aws_instance" "app_server" {
   }
 }
 
-    Name = "terraform-app-server"
-  }
-}
